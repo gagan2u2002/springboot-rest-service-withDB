@@ -1,4 +1,4 @@
-# sprintboot-rest-service-withDB
+# springboot-rest-service-withDB
 This project help you to perform CURD operation on DB with Spring boot
 At this point it only support PostGres database.
 
