@@ -33,3 +33,8 @@ Following are the request we have tested using POSTMAN -
      "designation": "Developer",  
      "salary": 10000  
      }
+
+5.  http://localhost:8080/rest/employee/2	- DELETE Request
+
+This request will delete 2 nd employee record from database.
+
