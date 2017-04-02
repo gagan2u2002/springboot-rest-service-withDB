@@ -40,7 +40,7 @@ public class EmployeeController {
 	 * @param employee
 	 * @return
 	 */
-	@RequestMapping(method = RequestMethod.POST)
+	@RequestMapping(value = "/addemployee" , method = RequestMethod.POST)
 	public ResponseEntity<Employee> addEmployee(@RequestBody Employee employee) {
 		empService.save(employee);
 		logger.debug("Added:: " + employee);
@@ -55,7 +55,7 @@ public class EmployeeController {
 	 * @return
 	 */
 
-	@RequestMapping(method = RequestMethod.PUT)
+	@RequestMapping(value = "/updatemployee",method = RequestMethod.PUT)
 	public ResponseEntity<Void> updateEmployee(@RequestBody Employee employee) {
 		Employee existingEmp = empService.getById(employee.getId());
 		if (existingEmp == null) {
@@ -90,7 +90,7 @@ public class EmployeeController {
 	 * 
 	 * @return
 	 */
-	@RequestMapping(method = RequestMethod.GET)
+	@RequestMapping(value = "/getallemployee" , method = RequestMethod.GET)
 	public ResponseEntity<List<Employee>> getAllEmployees() {
 		List<Employee> employees = empService.getAll();
 		if (employees.isEmpty()) {
