@@ -13,6 +13,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Application {
 
 	public static void main(String[] args) {
+		System.setProperty("server.port","8090"); // for runing on different tomcat port instead of 8080
 		SpringApplication.run(Application.class, args);
 	}
 }
