@@ -1,5 +1,5 @@
 # springboot-rest-service-withDB
-This project help you to perform CURD operation on DB with Spring boot
+This project helps you to perform CURD operation on DB with Spring boot
 At this point it only support PostGres database. NO unit test case has been written.
 
 Following are the request we have tested using POSTMAN -		
